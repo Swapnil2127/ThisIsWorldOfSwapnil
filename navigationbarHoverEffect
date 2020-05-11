@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navbar hover Effect</title>
+</head>
+<style type="text/css">
+	body{
+		background-color: #313131
+	}
+	ul{
+		list-style: none;
+		align-items: center;
+		flex-direction: column;
+		display: flex;
+	}
+	li{
+		margin-top: 19px;
+	}
+	a{
+		font-size: 21px;
+		letter-spacing: 3px;
+		transition: all 0.5s;
+		background-size: 200%;
+		background-image: linear-gradient(110deg,transparent 50%,white 60%);
+		padding: 15px 30px;
+		display: inline-block;
+		font-family: helvetica;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: white;
+	}
+	li:hover a{
+		background-position: 100%;
+		color: #313131;
+		transform: translateX(10px);
+	}
+
+	nav{
+		width: 90%;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		top: 50%;
+		left: 50%; 
+	}
+
+</style>
+<body>
+		<nav>
+		<ul>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">GALLERY</a></li>
+		<li><a href="#">CONTACT</a></li>
+		</ul>
+		</nav>
+</body>
+</html>
